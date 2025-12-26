@@ -1,0 +1,21 @@
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 50px;
+    padding: 50px;
+    background-color:#f6f6f6;
+    border-radius: 25px;
+    margin: 43px auto;
+    max-width: 1240px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+        background-color: transparent;
+        margin: 20px, auto;
+        
+    }
+}
