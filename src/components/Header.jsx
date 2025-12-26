@@ -13,4 +13,21 @@
  //</header>
 // )
 //}
+import { NavLink } from 'react-router-dom'; 
+import MenuItem from './MenuItem';
+import './Header.css';
 
+export default function Header() {
+  return (
+    <header className="header">
+      <NavLink to="/" className="header-logo">
+        <img src="/logo-kasa.svg" alt="Kasa" className="header-logo-img" />
+      </NavLink>
+
+      <nav className="header-nav">
+        <MenuItem to="/">Accueil</MenuItem>
+        <MenuItem to="/a-propos">À propos</MenuItem>
+      </nav>
+    </header>
+  );
+}

@@ -1,4 +1,4 @@
-import{ createBrowserRouter, routerProvider} from "react-router-dom";
+import{ createBrowserRouter, RouterProvider} from "react-router-dom";
 import MainLayout from '../layout/MainLayout';
 import Accueil from '../pages/Accueil';
 import APropos from '../pages/APropos';
@@ -30,6 +30,6 @@ const router = createBrowserRouter([
 ]);
 export default function AppRouter(){
     return(
-        <routerProvider router={router}/>
+        <RouterProvider router={router}/>
     )
 }
