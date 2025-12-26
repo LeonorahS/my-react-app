@@ -1,3 +1,7 @@
+
+
+import './Banner.css';
+
 export default function Banner({ image, title, className = '' }) {
   return (
     <section className={`banner ${className}`}>

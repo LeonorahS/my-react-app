@@ -35,6 +35,11 @@
   width: 100%;
   box-sizing: border-box;
 }
+.banner-propos {
+  height: 223px;                    
+  border-radius: 0;                 
+  margin: 0 auto 40px;              
+}
 
 /* mobile */
 @media (max-width: 768px) {

@@ -1,8 +1,7 @@
 export default function Apropos(){
     return(
         <section className="page a-propos">
-            <h1>À propos</h1>
-         
+           <Banner image="/public/images/home-banniere.jpg" title=" " className="banner-propos"/>
         </section>
     );
 }
