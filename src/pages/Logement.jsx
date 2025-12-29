@@ -1,43 +1,36 @@
-import{useParams} from 'react-router-dom';
-import {useState, useEffect} from 'react';
-import Slideshow from '../components/Slideshow';
-import './logement.css';
+import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import Slideshow from '../components/Slideshow';  // Import du carousel
+import './Logement.css';
 
 export default function Logement() {
-    const {id} = useParams();
-    const [logement, setLogement] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+  const { id } = useParams();
+  const [logement, setLogement] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchLogement = async () => {
-            try {
-                const response = await fetch(`http://localhost:8080/api/properties/${id}`);
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                setLogement(data);
-            } catch (error) {
-                setError(error.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchLogement();
-    }, [id]);
-    if (loading) {
-        return <p className="loading">Chargement du logement...</p>;
-    }
-    if (error || !logement) {
-    return <p className="error">Logement non trouvé</p>;
-  }
-    return (
-        <section className="page logement">
+  useEffect(() => {
+    fetch(`http://localhost:8080/api/properties/${id}`)
+      .then(res => res.json())
+      .then(data => {
+        setLogement(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, [id]);
 
-            <Slideshow images={logement.pictures} />
-            <h1 className="logement-title">{logement.title}</h1>
-            <p className="logement-location">{logement.location}</p>
-        </section>
-    );
+  if (loading) return <p>Chargement du logement...</p>;
+  if (!logement) return <p>Logement non trouvé</p>;
+
+  return (
+    <section className="page logement">
+      {/* Le carousel en haut */}
+      <Slideshow pictures={logement.pictures} />
+
+      {/* Titre et location en dessous */}
+      <h1 className="logement-title">{logement.title}</h1>
+      <p className="logement-location">{logement.location}</p>
+
+      {/* Le reste viendra plus tard */}
+    </section>
+  );
 }
