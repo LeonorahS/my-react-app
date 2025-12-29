@@ -2,7 +2,7 @@ import{ createBrowserRouter, RouterProvider} from "react-router-dom";
 import MainLayout from '../layout/MainLayout';
 import Accueil from '../pages/Accueil';
 import APropos from '../pages/APropos';
-import Logements from '../pages/Logements';
+import Logement from '../pages/Logement';
 import Erreur404 from '../pages/Erreur404';
 
 const router = createBrowserRouter([
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
                 element:<APropos/>
             },
             {
-                path:"/logements",
-                element:<Logements/>
+                path:"/logement/:id",
+                element:<Logement/>
             },
             {
                 path:"*",
