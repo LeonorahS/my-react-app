@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import Slideshow from '../components/Slideshow';  // Import du carousel
+import Slideshow from '../components/Slideshow';  
 import './Logement.css';
 
 export default function Logement() {
@@ -23,14 +23,13 @@ export default function Logement() {
 
   return (
     <section className="page logement">
-      {/* Le carousel en haut */}
+     
       <Slideshow pictures={logement.pictures} />
 
-      {/* Titre et location en dessous */}
+    
       <h1 className="logement-title">{logement.title}</h1>
       <p className="logement-location">{logement.location}</p>
 
-      {/* Le reste viendra plus tard */}
     </section>
   );
 }
