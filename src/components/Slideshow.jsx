@@ -12,7 +12,7 @@ export default function Slideshow({ pictures }) {
     setCurrentIndex((prev) => (prev === 0 ? pictures.length - 1 : prev - 1));
   };
 
-  // Si 0 ou 1 photo → pas de flèches ni compteur
+  
   if (!pictures || pictures.length <= 1) {
     return (
       <div className="slideshow">

@@ -43,7 +43,6 @@
   font-weight: 500;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .slideshow {
     height: 255px;
