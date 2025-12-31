@@ -4,10 +4,9 @@ import Slideshow from '../components/Slideshow';
 import './Logement.css';
 
 export default function Logement() {
-    const {id} = useParams();
-    const [logement, setLogement] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+  const { id } = useParams();
+  const [logement, setLogement] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch(`http://localhost:8080/api/properties/${id}`)
@@ -24,14 +23,13 @@ export default function Logement() {
 
   return (
     <section className="page logement">
-      {/* Le carousel en haut */}
+     
       <Slideshow pictures={logement.pictures} />
 
-      {/* Titre et location en dessous */}
       <h1 className="logement-title">{logement.title}</h1>
       <p className="logement-location">{logement.location}</p>
 
-      {/* Le reste viendra plus tard */}
+    
     </section>
   );
 }
