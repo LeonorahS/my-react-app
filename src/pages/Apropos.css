@@ -1,25 +1,19 @@
-.Banner-about {
-  height: 223px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 40px;
-}
-.collapses-section {
+.apropos-page {
   max-width: 1240px;
-  margin: 30px auto;
+  margin: 0 auto;
   padding: 0 20px;
-  /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    font-size: 24px;
-    color: #555;*/
 }
+
+.apropos-collapses {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1023px;
+  margin: 0 auto 50px auto;
+}
+
 @media (max-width: 768px) {
-  .Banner-about {
-    height: 150px;
-  }
-  .collapses-section {
-    padding: 0 10px;
+  .apropos-collapses {
+    gap: 20px;
   }
 }
