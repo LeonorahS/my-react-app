@@ -3,3 +3,15 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+
+.tag {
+  background-color: #ff6060;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-style: bold;
+}

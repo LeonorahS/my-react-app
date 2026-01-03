@@ -1,4 +1,5 @@
 .page.logement {
+  font-family: "Montserrat", sans-serif;
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
@@ -19,7 +20,7 @@
 }
 
 .logement-title {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 500;
   margin: 0 0 10px 0;
   color: #ff6060;
@@ -28,6 +29,8 @@
 .logement-location {
   font-size: 18px;
   margin: 0 0 20px 0;
+  color: #000000;
+  font-weight: 500;
 }
 
 .logement-tags {

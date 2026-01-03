@@ -1,7 +1,6 @@
 
 //import { MenuItem } from "./MenuItem";
 
-
 //const  items = ["Menu1", "Menu2", "Menu3", "Menu4"];
 
 //export function Header() {

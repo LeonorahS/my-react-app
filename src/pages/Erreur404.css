@@ -1,0 +1,38 @@
+.page.erreur404 {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #ffffff;
+}
+.erreur404-title {
+  font-size: 288px;
+  color: #ff6060;
+  margin: 0;
+  font-weight: 700;
+}
+.erreur404-message {
+  font-size: 36px;
+  color: #ff6060;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.erreur404-link {
+  display: flex;
+  margin-top: 125px;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  text-decoration: underline solid;
+  align-items: center;
+  font-size: 18px;
+}
+.erreur404-link:hover {
+  background-color: #ff4c4c;
+}
