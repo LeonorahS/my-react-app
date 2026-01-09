@@ -18,11 +18,14 @@ export default function Collapse({ title, children }) {
         />
       </button>
 
-      <div className={`collapse-content ${isOpen ? 'open' : ''}`}>
-        <div className="collapse-inner">
-          {children}
-        </div>
-      </div>
+      {isOpen && (
+  <div className="collapse-content open">
+    <div className="collapse-inner">
+      {children}
     </div>
+  </div>
+)}
+      </div>
+    
   );
 }
