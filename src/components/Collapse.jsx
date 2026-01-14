@@ -1,11 +1,14 @@
-import { useState } from 'react';
-import arrow from '/src/assets/arrow-collapse.svg'; 
+import { useState, useRef, useEffect } from 'react';
+import arrow from '/src/assets/arrow-collapse.svg';
 import './Collapse.css';
 
 export default function Collapse({ title, children }) {
-  
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const contentRef = useRef(null);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="collapse">
@@ -18,14 +21,18 @@ export default function Collapse({ title, children }) {
         />
       </button>
 
-      {isOpen && (
-  <div className="collapse-content open">
-    <div className="collapse-inner">
-      {children}
-    </div>
-  </div>
-)}
+      <div
+        className={`collapse-content ${isOpen ? 'open' : ''}`}
+        ref={contentRef}
+        style={{
+          maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : '0px',
+          opacity: isOpen ? 1 : 0,
+        }}
+      >
+        <div className="collapse-inner">
+          {children}
+        </div>
       </div>
-    
+    </div>
   );
 }
