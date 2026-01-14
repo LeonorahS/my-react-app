@@ -13,8 +13,10 @@
 }
 
 @media (max-width: 768px) {
-  .apropos-collapses {
+  .apropos-page {
     padding: 0;
+  }
+  .apropos-collapses {
     margin: 16px 16px 50px 16px;
     max-width: none;
     width: auto;

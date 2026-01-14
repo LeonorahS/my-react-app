@@ -68,16 +68,35 @@ img.collapse-arrow {
 }
 
 @media (max-width: 768px) {
+  .collapse-header {
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 5px 5px 0 0;
+  }
   .collapse {
     margin: 0;
     padding: 10px 0 10px;
   }
 
   .collapse-title {
+    font-size: 13px;
+  }
+
+  .collapse-arrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  .collapse-inner {
+    padding: 20px 15px;
+    font-size: 12px;
     font-size: 14px;
     font-weight: 500 bold;
   }
 
+  .collapse-content {
+    border-radius: 0 0 5px 5px;
+  }
   .collapse-content.open {
     padding: 16px 15px;
     font-size: 13px;

@@ -16,6 +16,16 @@ main,
 .main-content {
   flex: 1;
   max-width: 1240px;
-  margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0;
+  }
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 }
