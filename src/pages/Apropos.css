@@ -14,6 +14,10 @@
 
 @media (max-width: 768px) {
   .apropos-collapses {
+    padding: 0;
+    margin: 16px 16px 50px 16px;
+    max-width: none;
+    width: auto;
     gap: 20px;
   }
 }

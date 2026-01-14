@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+
 import "./Erreur404.css"
 
 export default function Erreur404(){
@@ -9,6 +10,7 @@ return(
     <NavLink to="/" className="erreur404-link">
         Retourner sur la page d'accueil
     </NavLink>
+   
     </section>
 );
 }

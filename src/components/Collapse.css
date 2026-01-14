@@ -44,12 +44,14 @@ img.collapse-arrow {
   background-color: #f6f6f6;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  transition: max-height 0.35s ease;
+  transition: max-height 0.7s ease, opacity 0.7s ease;
 }
 
 .collapse-content.open {
   max-height: 600px;
   background-color: #f6f6f673;
+  padding: 30px 20px;
+  opacity: 1;
 }
 
 .collapse-inner {
@@ -66,27 +68,19 @@ img.collapse-arrow {
 }
 
 @media (max-width: 768px) {
-  .collapse-header {
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 5px 5px 0 0;
+  .collapse {
+    margin: 0;
+    padding: 10px 0 10px;
   }
 
   .collapse-title {
+    font-size: 14px;
+    font-weight: 500 bold;
+  }
+
+  .collapse-content.open {
+    padding: 16px 15px;
     font-size: 13px;
-  }
-
-  .collapse-arrow {
-    width: 16px;
-    height: 16px;
-  }
-
-  .collapse-inner {
-    padding: 20px 15px;
-    font-size: 12px;
-  }
-
-  .collapse-content {
-    border-radius: 0 0 5px 5px;
+    line-height: 1.4;
   }
 }

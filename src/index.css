@@ -1,4 +1,18 @@
+html,
 body {
-  max-width: 1240px;
-  margin: 0 auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  min-height: 100vh;
+}
+main,
+.main-content {
+  flex: 1;
 }

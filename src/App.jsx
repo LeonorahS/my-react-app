@@ -6,12 +6,15 @@ import Header from './components/Header'
 import AppRouter from './router/Router'
 
 
+
 function App() {
  return(
  <main>
     
     <AppRouter/>
+    
  </main>
+ 
  )
 
 }

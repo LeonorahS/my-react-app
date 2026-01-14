@@ -1,7 +1,7 @@
 .host {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 .host-name {
@@ -22,37 +22,19 @@
 }
 
 @media (max-width: 768px) {
+  .host {
+    align-items: center;
+    gap: 6px;
+  }
+
   .host-name {
     font-size: 12px;
+    text-align: right;
     max-width: 80px;
   }
 
   .host-picture {
     width: 32px;
     height: 32px;
-  }
-
-  .host {
-    gap: 6px;
-  }
-}
-
-.host-picture {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-@media (max-width: 768px) {
-  .host {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-  }
-
-  .host-name {
-    margin-left: 0;
-    text-align: left;
-    max-width: none;
   }
 }

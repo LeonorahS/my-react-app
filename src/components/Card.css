@@ -39,3 +39,29 @@
   margin: 0;
   max-width: 80%;
 }
+@media ( max-width:768px ) {
+  
+.cards-container{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  padding: 0 16px;
+}
+
+.card{
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+.card-title{
+  font-size: 14px;
+  padding-right: 12px;
+  left: 12px;
+  bottom: 12px;
+}
+
+
+
+}

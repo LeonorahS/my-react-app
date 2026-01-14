@@ -14,4 +14,11 @@
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-style: bold;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .logement-tags {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
 }

@@ -38,15 +38,15 @@
   .banner {
     height: 111px;
     border-radius: 10px;
-    margin: 20px auto;
+    margin: 5px 16px;
   }
 
   .banner-title {
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
     left: 16px;
-    top: 50%;
     transform: translateY(-50%);
-    padding: 0;
+    padding: 0 16px;
+    max-width: 240px;
   }
 }

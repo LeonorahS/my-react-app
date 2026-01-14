@@ -36,16 +36,15 @@
 }
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
+    padding: 20px 16px;
+    max-width: none;
   }
 
   .header-nav {
     gap: 26px;
     margin-top: 10px;
   }
-  header-logo-img {
+  .header-logo-img {
     height: 47px;
   }
   .header-nav-item {

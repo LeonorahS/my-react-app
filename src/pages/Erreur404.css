@@ -36,3 +36,33 @@
 .erreur404-link:hover {
   background-color: #ff4c4c;
 }
+
+@media screen and (max-width: 768px) {
+  .page.erreur404 {
+    padding: 40px 20px;
+    text-align: center;
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .erreur404-title {
+    font-size: 96px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .erreur404-message {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  .erreur404-link {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30%;
+    text-decoration: underline;
+  }
+}
